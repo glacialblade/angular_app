@@ -2,9 +2,9 @@
 	class Database{
 		var $dbresult;
 
-		function __construct(){
+		function __construct($dbname){
 			$this->db = mysql_connect('localhost','root','');
-			mysql_select_db('proposalbuilder', $this->db);
+			mysql_select_db($dbname, $this->db);
 		}
 
 		public function get($query,$fetchAll){

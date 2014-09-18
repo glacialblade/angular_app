@@ -1,0 +1,31 @@
+<div id="content">
+	<div class="text_right">
+		<a href="#/add_project"><button class="button">Add Project</button></a>
+	</div>
+	<br/>
+	<table class="table">
+		<colgroup width="250"/>
+		<colgroup width="250"/>
+		<thead>
+			<tr>
+				<td>Project Name</td>
+				<td>Client Name</td>
+				<td>Date Created</td>
+				<td>Cost</td>
+				<td>Cost Received</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr data-ng-repeat="project in projects">
+				<td>{{ project.name }}</td>
+				<td>{{ project.client }}</td>
+				<td>{{ project.date_created }}</td>
+				<td>{{ project.cost }}</td>
+				<td>{{ project.cost_received }}</td>
+			</tr>
+			<tr data-ng-if="!projects">
+				<td colspan="5" class="bold italic red text_center">No Projects Found.</td>
+			</tr>
+		</tbody>
+	</table>
+</div>

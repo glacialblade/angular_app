@@ -1,0 +1,204 @@
+html,body{
+	background:#1d242c;
+	color:#834700;
+	font-family:Trebuchet MS, tahoma;
+	font-size:13px;
+	padding:0px;
+	margin:0px;
+}
+label{
+	cursor:pointer;
+}
+#wrapper{
+	width:1020px;
+	margin:0 auto;
+}
+#header{
+	background:#da4f30;
+	height:80px;
+	margin-top:50px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	color:#f5e9db;
+}
+#header_left{
+	margin-left:20px;
+	margin-top:10px;
+}
+#header_right{
+	margin-top:50px;
+	margin-right:20px;
+}
+#header a{
+	color:#f5e9db;
+	cursor:pointer;
+	text-decoration:underline;
+}
+#content{
+	background:#f5e9db;
+	padding:20px;
+	padding-bottom:50px;
+}
+#content h1,#content h2,#content h3,#content h4,#content h5{
+	color:#da4f30;
+	margin-top:0px;
+}
+#page{
+	background:white;
+	padding:20px;
+	border-radius:5px;
+	width:560px;
+}
+#sidebar{
+	width:360px;
+}
+.box_header{
+	background:#da4f30;
+	padding:10px;
+	color:white;
+	font-size:15px;
+}
+.box_content{
+	border:1px solid #da4f30;
+	background:white;
+	padding:10px;
+}
+#footer{
+	background:#da4f30;
+	padding:20px;
+	color:white;
+}
+#login_box{
+	width:360px;
+	margin:0 auto;
+	background:#f5e9db;
+	border-radius:8px;
+	padding:25px;
+	margin-top:50px;
+}
+#login_box input[type="text"],#login_box input[type="password"]{
+	background:white;
+	border:0px;
+	padding:15px 10px;
+	width:340px;
+	display:block;
+}
+#login_box input[type="password"]{
+	margin-top:-1px;
+}
+#login_box .button{
+	width:340px;
+}
+
+/* GENERAL CLASSES */
+.no_underline{ text-decoration:none !important; }
+.bold{ font-weight:bold; }
+.italic{ font-style:italic; }
+.red{ color:#FF3333; }
+.green{ color:#33FF33; }
+.text_right{ text-align:right; }
+.text_center{ text-align:center; }
+.text_left{ text-align:left; }
+.float_right{ float:right; }
+.float_left{ float:left; }
+.clear{ clear:both; }
+.table{
+	width:100%;
+	border-collapse:collapse;
+	background:white;
+}
+.table thead tr{
+	font-weight:bold;
+	background:#4fc9e0;
+	color:white;-moz-box-shadow:inset 0px 1px 0px 0px #fce2c1;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #fce2c1;
+	box-shadow:inset 0px 1px 0px 0px #fce2c1;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffc477), color-stop(1, #fb9e25) );
+	background:-moz-linear-gradient( center top, #ffc477 5%, #fb9e25 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffc477', endColorstr='#fb9e25');
+	background-color:#ffc477;
+	-webkit-border-top-left-radius:20px;
+	-moz-border-radius-topleft:20px;
+	border-top-left-radius:20px;
+	-webkit-border-top-right-radius:20px;
+	-moz-border-radius-topright:20px;
+	border-top-right-radius:20px;
+	-webkit-border-bottom-right-radius:20px;
+	-moz-border-radius-bottomright:20px;
+	border-bottom-right-radius:20px;
+	-webkit-border-bottom-left-radius:20px;
+	-moz-border-radius-bottomleft:20px;
+	border-bottom-left-radius:20px;
+	text-indent:0;
+	border:1px solid #eeb44f;
+}
+.table td{
+	padding:10px;
+}
+.table tbody tr td{
+	border:1px solid #fb9e25;
+}
+
+/* INPUT FIELDS */
+.button {
+	cursor:pointer;
+	-moz-box-shadow:inset 0px 1px 0px 0px #fce2c1;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #fce2c1;
+	box-shadow:inset 0px 1px 0px 0px #fce2c1;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffc477), color-stop(1, #fb9e25) );
+	background:-moz-linear-gradient( center top, #ffc477 5%, #fb9e25 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffc477', endColorstr='#fb9e25');
+	background-color:#ffc477;
+	-webkit-border-top-left-radius:20px;
+	-moz-border-radius-topleft:20px;
+	border-top-left-radius:20px;
+	-webkit-border-top-right-radius:20px;
+	-moz-border-radius-topright:20px;
+	border-top-right-radius:20px;
+	-webkit-border-bottom-right-radius:20px;
+	-moz-border-radius-bottomright:20px;
+	border-bottom-right-radius:20px;
+	-webkit-border-bottom-left-radius:20px;
+	-moz-border-radius-bottomleft:20px;
+	border-bottom-left-radius:20px;
+	text-indent:0;
+	border:1px solid #eeb44f;
+	display:inline-block;
+	color:#ffffff;
+	font-size:12px;
+	font-weight:bold;
+	font-style:normal;
+	height:40px;
+	line-height:40px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #cc9f52;
+	padding:0px 25px;
+}
+.button:active {
+	position:relative;
+	top:1px;
+}
+input[type=text],input[type=password],textarea,select {
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	outline: none;
+	border: 1px solid #CCCCCC;
+	padding:10px;
+	width:95%;
+	color:#834700;
+}
+input[type=text].error,input[type=password].error,textarea.error,select.error {
+  border:1px solid #FF3333 !important;
+}
+ 
+input[type=text]:focus,input[type=password]:focus,textarea:focus,select:focus {
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  border: 1px solid rgba(81, 203, 238, 1);
+}
+input[type=text].error:focus,input[type=password].error:focus,textarea.error:focus,select.error:focus {
+  box-shadow: 0 0 5px rgba(255, 100, 100, 1);
+  border: 1px solid rgba(81, 203, 238, 1);
+}

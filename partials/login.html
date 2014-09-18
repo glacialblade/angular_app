@@ -1,0 +1,18 @@
+<div id="login_box">
+	<div class="bold italic red" data-ng-if="error_message">
+		{{ error_message }}<br/><br/>
+	</div>
+	
+	<div data-ng-form="login_form">
+		<input type="text" data-ng-model="user.username" placeholder="Username" name="username"
+			   data-ng-class="{ 'error':login_form.username.$dirty && !user.username }"
+			   data-ng-required="true">
+		<input type="password" data-ng-model="user.password" placeholder="Password" name="password"
+		       data-ng-class="{ 'error':login_form.password.$dirty && !user.password }"
+		       data-ng-required="true">
+		<br/>
+		<div class="text_center">
+			<input type="button" value="Login" class="button" data-ng-click="login()">
+		</div>
+	</div>
+</div>

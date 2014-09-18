@@ -6,15 +6,47 @@
 	<link rel="stylesheet" href="css/style.css">
 	
 	<!-- Libraries !-->
+	<script type="text/javascript" src="js/lib/angular/angular.min.js"></script>
+	<script type="text/javascript" src="js/lib/angular/angular-route.min.js"></script>
+	<script type="text/javascript" src="js/lib/angular/angular-cookies.min.js"></script>
 	<script type="text/javascript" src="js/app.js"></script>
 
 	<!-- Controllers !-->
+	<script type="text/javascript" src="js/controllers/template.js"></script>
+	<script type="text/javascript" src="js/controllers/login.js"></script>
+	<script type="text/javascript" src="js/controllers/home.js"></script>
+	<script type="text/javascript" src="js/controllers/add_project.js"></script>
 
 	<!-- Factories !-->
+	<script type="text/javascript" src="js/factories/user.js"></script>
+
+	<!-- Services !-->
+	<script type="text/javascript" src="js/services/redirect.js"></script>
 
 	<!-- Directives !-->
 </head>
 <body>
-	<div data-ng-view=""></div>
+	<div id="wrapper">
+		<div data-ng-controller="TemplateController">
+			<div id="header" data-ng-if="user">
+				<div class="float_left" id="header_left">
+					<h1><a href="#/" class="no_underline">My Projects</a></h1>
+				</div>
+				<div class="float_right" id="header_right">
+					Welcome <strong><em>{{ user.fname + " " + user.lname }}</em></strong> 
+					(<a data-ng-click="logout()">logout</a>)
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+
+		<div data-ng-view=""></div>
+		
+		<div data-ng-controller="TemplateController">
+			<div id="footer" data-ng-if="user" class="text_center">
+				My Projects System
+			</div>
+		</div>
+	</div>
 </body>
 </html>
